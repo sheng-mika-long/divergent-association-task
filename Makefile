@@ -2,7 +2,7 @@ run:
 	python3 examples.py
 
 install: glove.840B.300d.txt
-	pip3 install --user numpy scipy
+	pip3 install numpy scipy
 
 glove.840B.300d.txt:
 	# Download from Stanford NLP GloVe page (Pennington et al.)
