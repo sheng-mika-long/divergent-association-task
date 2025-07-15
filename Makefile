@@ -6,7 +6,9 @@ install: glove.840B.300d.txt
 
 glove.840B.300d.txt:
 	# Download from Stanford NLP GloVe page (Pennington et al.)
-	wget https://nlp.stanford.edu/data/glove.840B.300d.zip && \
+	# wget https://nlp.stanford.edu/data/glove.840B.300d.zip && \
+	# 	unzip glove.840B.300d.zipx
+	curl --output glove.840B.300d.zip https://downloads.cs.stanford.edu/nlp/data/glove.840B.300d.zip && \
 		unzip glove.840B.300d.zip
 
 words.txt:
